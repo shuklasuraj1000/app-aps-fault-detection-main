@@ -69,10 +69,11 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(host='127.0.0.1', port=8001, debug=True)
+    #app.run(debug=True)
     # Call for single query >>>>>>>>
-#PN, STATUS,_,_,_= single_query('NSA5120B10')
-    #(f"PART NUMBER:", {PN},"\nPART STATUS: ", {STATUS})
+    PN, STATUS,_,_,_= single_query('NSA5120B10')
+    print(f"PART NUMBER:", {PN},"\nPART STATUS: ", {STATUS})
     
     # Call for batch query >>>>>>>>>
     #batch_Q = batch_query()
