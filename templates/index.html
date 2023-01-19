@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../static/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style >
+
+  </style>
+</head>
+
+<body >
+  <header class="header">
+    <a href="#" class="logo"><img src="../static/images/echa1.png" class="echa_logo"></a>
+    <nav class="nav-items">
+      <div class="down">
+      <a href="/about">About Us </a>
+      <a href="/preAssessment">Pre-Assessment</a>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown_1</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown_2</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+        </div>
+      </div>
+      <a href="./contact">Contact</a>
+    </div>
+
+    <!-- ExpleoLogo -->
+    <img src="../static/images/expleo.png" class="img">
+    </nav>
+  </header>
+ 
+<div>&nbsp; <!-- Blanck space aftr head --></div>
+
+  <div class="DictionaryBox">
+    <div class="dictContent">
+      <div class="row">
+       
+
+        <div class="col" md="6" >
+          <div class="search">
+            <h2 align="center">Single Query</h2>
+            
+          <form action=" " method="post">
+            <h4 align="center">Search Part Number REACH Status </h4>
+              <input name="pno" type="text" id="pno" placeholder="eg.  ABS0100 , NAS6403-6420 " style="width: 350px; padding:5px; margin-left: 25%;"/><br><br>
+              <button type="submit"  data-toggle="modal" data-target="#exampleModalCenter"  style="width: 350px;padding:5px;margin-left: 25%;">Search</button>
+              
+              <!-- Modal -->
+            </form>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalLongTitle" style="color:rgb(0, 79, 214);">Output</h2>
+              </button>
+            </div>
+            <div style="color:red ;"class="modal-body">
+              <h2 id="P_nubmer" style="color:rgb(0, 0, 0) ;"></h2>
+              <h2 id="status" style="color:rgb(0, 0, 0) ;"></h2>
+              <h2 id="wstatus" style="color:rgb(255, 0, 0) ;"></h2>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+          </div>
+        </div>
+          <!-- LEFT BLOCK -->
+         
+       
+        <div class="col"  md="6" >
+            <h2 class="c"></h2>
+           <div class="search" >
+             <h2 align="center">Batch Query </h2><br>
+            <label style="font-size: 150%; margin-left: 20%;" >upload file here....!</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input  type="file" id="file1" name="upload"/><br>
+             <button class="dbutton fa fa-download" style="width:50%">  Download</button>
+             
+           </div>
+           <!-- RIGHT BLOCK -->
+         
+        </div>
+    </div>
+        </div><br><br>
+        <div class="icontainer ">
+  
+          <div class="card-deck">
+            <div class="card" style="background-color: rgb(255, 255, 255);">
+              <div class="card-body text-center">
+                <img src="../static/images/nature.jpg"class="card-img-top" >
+                <p class="card-text"><br><b>Over 2 billion people live in water-stressed countries, which is expected to be exacerbated in some regions as result of climate change and population growth.</b> </p>
+                 </div>
+            </div>
+            <div class="card" style="background-color: rgb(255, 255, 255);">
+              <div class="card-body text-center">
+                <img src="../static/images/virus.jpg"class="card-img-top" >
+                <p class="card-text"><br><b>Cancer is a disease in which some of the body’s cells grow uncontrollably and spread to other parts of the body.</b></p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(255, 255, 255);">
+              <div class="card-body text-center">
+                <img src="../static/images/env.jpg"class="card-img-top"  >
+                <p class="card-text"><br><b>keep your environment clean , safe and healthy</b> </p>
+              </div>
+            </div>
+            <div class="card" style="background-color: rgb(255, 255, 255);">
+              <div class="card-body text-center">
+                <img src="../static/images/water.jpg"class="card-img-top" >
+                <p class="card-text"><br><b>Water Pollution One of the primary causes of water pollution is the contamination of water bodies by toxic chemicals. </b></p>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+
+        
+  </div><br>
+
+
+<!-- Footer  -->
+  <footer class="footer">
+    <div class="copy">&copy; 2023 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="#">Home</a>
+        <a href="">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <span>Social Links</span>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../static/search.js"></script>
+
+  <script>
+    function bigImg(x) {
+      x.style.height = "200px";
+      x.style.width = "200px";
+    }   
+    </script>
+</body>
+
+</html>
