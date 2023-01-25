@@ -18,10 +18,10 @@ def get_requirements()->List[str]:
 
 
 setup(
-    name="ECHA-TOOL",
-    version="0.0.1",
-    author="suraj shukla",
-    author_email="shuklasuraj1000@gmail.com",
+    name="sensor",
+    version="0.0.2",
+    author="ineuron",
+    author_email="avnish@ineuron.ai",
     packages = find_packages(),
     install_requires=get_requirements(),
 )
