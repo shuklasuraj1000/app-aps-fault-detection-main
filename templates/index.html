@@ -22,7 +22,8 @@
 
 <body >
   <header class="header">
-    <a href="#" class="logo"><img src="../static/images/echa1.png" class="echa_logo"></a>
+    <img src="../static/images/echa1.png" class="img echa_logo">
+   
     <nav class="nav-items">
       <div class="down">
       <a href="/about">About Us </a>
@@ -41,103 +42,71 @@
           <a href="#">Link 2</a>
         </div>
       </div>
-      <a href="./contact">Contact</a>
+      <a href="/contact">Contact</a>
     </div>
 
     <!-- ExpleoLogo -->
     <img src="../static/images/expleo.png" class="img">
     </nav>
   </header>
- 
-<div>&nbsp; <!-- Blanck space aftr head --></div>
-
   <div class="DictionaryBox">
-    <div class="dictContent">
-      <div class="row">
-       
-
-        <div class="col" md="6" >
-          <div class="search">
-            <h2 align="center">Single Query</h2>
+    
+    
+    
+      <div class="row"  >
+        
+        <div class="mclass"  >
+         
+          <marquee style="font-size: 50px; color: rgb(255, 255, 255);" behavior="scroll" 
+           width="85%" height="100px"  direction="left"
+           Scrollamount=18 hspace="75%" > <b> Wel-Come</b> To <b>REACH</b>.
+           </marquee>
             
-          <form action=" " method="post">
-            <h4 align="center">Search Part Number REACH Status </h4>
-              <input name="pno" type="text" id="pno" placeholder="eg.  ABS0100 , NAS6403-6420 " style="width: 350px; padding:5px; margin-left: 25%;"/><br><br>
-              <button type="submit"  data-toggle="modal" data-target="#exampleModalCenter"  style="width: 350px;padding:5px;margin-left: 25%;">Search</button>
-              
-              <!-- Modal -->
-            </form>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title" id="exampleModalLongTitle" style="color:rgb(0, 79, 214);">Output</h2>
-              </button>
-            </div>
-            <div style="color:red ;"class="modal-body">
-              <h2 id="P_nubmer" style="color:rgb(0, 0, 0) ;"></h2>
-              <h2 id="status" style="color:rgb(0, 0, 0) ;"></h2>
-              <h2 id="wstatus" style="color:rgb(255, 0, 0) ;"></h2>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-          </div>
+    
         </div>
-      </div>
-      <!-- Modal -->
+        <div class="col icontainer1 " md="4" style="margin-top: 20px;">
+          
+          <div class="search" >
+          <form action="http://127.0.0.1:5000/test" method="post">
+            <h2 align="center"><b>Single Query</b></h2>
+            <h4 align="center">Search Part Number REACH Status</h4>
+            
+            <input name="pno" type="text" id="pno" placeholder="eg.  ABS0100 , NAS6403-6420 "
+             style="width: 350px; padding:5px; margin-left: 10%;"/><br>
+
+              <button type="submit button"  data-toggle="modal" data-target="#exampleModalCenter" 
+               style="width: 350px;padding:5px;margin-left: 10%;" ">Search</button><br>
+               
+               <h5 style="margin-left: 10%;">Output :- <b>{{res}}</b></h5>
+              
+            </form>
           </div>
         </div>
           <!-- LEFT BLOCK -->
          
        
-        <div class="col"  md="6" >
-            <h2 class="c"></h2>
+        <div class="col  icontainer2"  md="4" style="margin-top: 20px;">
+            
            <div class="search" >
-             <h2 align="center">Batch Query </h2><br>
-            <label style="font-size: 150%; margin-left: 20%;" >upload file here....!</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             <input  type="file" id="file1" name="upload"/><br>
-             <button class="dbutton fa fa-download" style="width:50%">  Download</button>
+             <h2 align="center"><b>Batch Query</b> </h2>
+             <div>
+              <h4>upload file here..!</h4>
+             <input style="margin-left: 45%;" type="file" id="file1" name="upload"/><br>
+             </div>
+             <br>
+            
+             <button class="dbutton fa fa-download" style="width:50% "align="center" >  Download</button>
              
            </div>
            <!-- RIGHT BLOCK -->
          
         </div>
     </div>
-        </div><br><br>
-        <div class="icontainer ">
-  
-          <div class="card-deck">
-            <div class="card" style="background-color: rgb(255, 255, 255);">
-              <div class="card-body text-center">
-                <img src="../static/images/nature.jpg"class="card-img-top" >
-                <p class="card-text"><br><b>Over 2 billion people live in water-stressed countries, which is expected to be exacerbated in some regions as result of climate change and population growth.</b> </p>
-                 </div>
-            </div>
-            <div class="card" style="background-color: rgb(255, 255, 255);">
-              <div class="card-body text-center">
-                <img src="../static/images/virus.jpg"class="card-img-top" >
-                <p class="card-text"><br><b>Cancer is a disease in which some of the body’s cells grow uncontrollably and spread to other parts of the body.</b></p>
-              </div>
-            </div>
-            <div class="card" style="background-color: rgb(255, 255, 255);">
-              <div class="card-body text-center">
-                <img src="../static/images/env.jpg"class="card-img-top"  >
-                <p class="card-text"><br><b>keep your environment clean , safe and healthy</b> </p>
-              </div>
-            </div>
-            <div class="card" style="background-color: rgb(255, 255, 255);">
-              <div class="card-body text-center">
-                <img src="../static/images/water.jpg"class="card-img-top" >
-                <p class="card-text"><br><b>Water Pollution One of the primary causes of water pollution is the contamination of water bodies by toxic chemicals. </b></p>
-              </div>
-            </div>  
-          </div>
-        </div>
+        
 
 
         
-  </div><br>
+  </div>
 
 
 <!-- Footer  -->
@@ -159,14 +128,15 @@
     </div>
   </footer>
 
-  <script src="../static/search.js"></script>
-
   <script>
     function bigImg(x) {
       x.style.height = "200px";
       x.style.width = "200px";
-    }   
+    }
+    
     </script>
 </body>
 
 </html>
+
+
